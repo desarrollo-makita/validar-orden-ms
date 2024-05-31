@@ -12,7 +12,8 @@ const sql = require('mssql');
 async function validarOrden(req , res){
     try{
        
-        logger.info(`Iniciamos la funcion validarDatos`);
+        console.log("********" , req.body);
+        logger.info(`Iniciamos la funcion validarOrden`);
         
         if (!req.body || !req.body.data) {
             logger.error(`Error: Problemas con los parametros de entrada`);
@@ -39,6 +40,10 @@ async function validarOrden(req , res){
         
         if(osIngresadasList.length > 0 ){
             // await insertarOrdenServicio(osDataList);
+             // microservicio insertar-orden-ms
+             logger.info(`Ejecuta microservcio insertar-orden-ms`); 
+             const responseInsertarOrden = await axios.post('http://172.16.1.206:4009/ms/insertar-orden', osIngresadasList );
+             logger.debug(`Respuesta de microservicio insertar-orden-ms ${responseInsertarOrden}`);
         }
         
         logger.info(`Fin a la funcion validarOrden validar-orden-ms`);
