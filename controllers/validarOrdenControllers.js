@@ -14,8 +14,8 @@ async function validarOrden(req , res){
        
         
         logger.info(`Iniciamos la funcion validarOrden`);
-        return;
-        if (!req.body || !req.body) {
+
+        if (!req.body) {
             logger.error(`Error: Problemas con los parametros de entrada`);
             return res.status(400).json({ error: `Parámetros faltantes o vacíos` });
         }
