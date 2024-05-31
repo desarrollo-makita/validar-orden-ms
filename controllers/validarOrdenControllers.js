@@ -44,7 +44,7 @@ async function validarOrden(req , res){
              // microservicio insertar-orden-ms
              logger.info(`Ejecuta microservcio insertar-orden-ms`); 
              const responseInsertarOrden = await axios.post('http://172.16.1.206:4009/ms/insertar-orden', osIngresadasList );
-             logger.debug(`Respuesta de microservicio insertar-orden-ms ${responseInsertarOrden}`);
+             logger.debug(`Respuesta de microservicio insertar-orden-ms ${JSON.stringify(responseInsertarOrden)}`);
         }
         
         logger.info(`Fin a la funcion validarOrden validar-orden-ms`);
