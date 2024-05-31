@@ -12,15 +12,15 @@ const sql = require('mssql');
 async function validarOrden(req , res){
     try{
        
-        console.log("********" , req.body);
-        logger.info(`Iniciamos la funcion validarOrden`);
         
-        if (!req.body || !req.body.data) {
+        logger.info(`Iniciamos la funcion validarOrden`);
+        return;
+        if (!req.body || !req.body) {
             logger.error(`Error: Problemas con los parametros de entrada`);
             return res.status(400).json({ error: `Parámetros faltantes o vacíos` });
         }
         
-        const newArray = req.body.data;
+        const newArray = req.body;
         const osIngresadasList = [];
         const osNoIngresadasList = [];
         const cantidadOsIngresadas=[];
