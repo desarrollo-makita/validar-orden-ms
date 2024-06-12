@@ -53,7 +53,7 @@ async function validarOrden(req , res){
     }catch (error) {
         
         // Manejamos cualquier error ocurrido durante el proceso
-        logger.error(`Error en validarCliente: ${error.message}`);
+        logger.error(`Error en validarOrden: ${error.message}`);
         res.status(500).json({ error: `Error en el servidor [validar-orden-ms] :  ${error.message}`  });
     }finally{
         await closeDatabaseConnection();
