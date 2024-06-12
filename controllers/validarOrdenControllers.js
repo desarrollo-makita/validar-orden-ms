@@ -43,7 +43,7 @@ async function validarOrden(req , res){
             osIngresadasList;
              // microservicio insertar-orden-ms
              logger.info(`Ejecuta microservcio insertar-orden-ms`); 
-             const responseInsertarOrden = await axios.post('http://172.16.1.206:4009/ms/insertar-orden', osIngresadasList );
+             const responseInsertarOrden = await axios.post('http://172.16.1.206:3017/ms/insertar-orden', osIngresadasList );
              logger.debug(`Respuesta de microservicio insertar-orden-ms ${responseInsertarOrden}`);
         }
         
