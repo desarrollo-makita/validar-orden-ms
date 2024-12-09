@@ -325,3 +325,21 @@
 2024-05-31 10:31:47 [INFO]: Iniciamos la funcion validarOrden
 2024-05-31 10:31:47 [ERROR]: Error: Problemas con los parametros de entrada
 2024-05-31 10:35:05 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:06 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:06 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:07 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:07 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:08 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:08 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:08 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:08 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:09 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:09 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:09 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:09 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:51:10 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:51:10 [ERROR]: Error en validarCliente: newArray is not iterable
+2024-06-12 17:52:17 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:52:17 [ERROR]: Error en validarOrden: newArray is not iterable
+2024-06-12 17:52:59 [INFO]: Iniciamos la funcion validarOrden
+2024-06-12 17:52:59 [INFO]: Fin a la funcion validarOrden validar-orden-ms
